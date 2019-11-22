@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Sushi{% endblock %}
+
+{% block content %}
+
+{# Doing a bit of shenanigan, and using the same form for create and edit #}
+{# `if` statements in Jinja are expplained here: https://jinja.palletsprojects.com/en/2.10.x/templates/#builtin-tests #}
+
+{{ action }}
+
+{% if action == "edit" %}
+    <h2>Edit Sushi</h2>
+    <form action="{{ url_for('update_sushi', id=sushi.id) }}" method="post"> {# Use the method name, not the route name in url_for #}
+{% else %}
+    <h2>Create Sushi</h2>
+    <form action="{{ url_for('update_sushi', id=0) }}" method="post">
+{% endif %}
+
+<p>
+  <label for="name">Name: </label>
+  <input name="name" value="{{ sushi.name|escape }}">
+</p>
+
+<p>
+  <label for="price">Price: </label>
+  <input name="price" value="{{ sushi.price|escape }}">
+</p>
+
+<p>
+{% if action == "edit" %}
+    <button type="submit">Edit</button>
+{% else %}
+    <button type="submit">Create</button>
+{% endif %}
+</p>
+
+</form>
+
+{% if action == "edit" %}
+{# Only offer delete if it already exists #}
+  <form action="{{ url_for('delete_sushi', id=sushi.id) }}" method="post">
+      <button type="submit">Delete this sushi forever</button>
+  </form>
+{% endif %}
+
+{% endblock %}

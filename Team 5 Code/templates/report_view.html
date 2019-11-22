@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{# Comments in templates go inside these #}
+
+{# For an application this small, only worry about changing the 'content' block #}
+{# Variables are used with double curly braces {{ some_var }} #}
+{# With minor exceptions, variable names must be passed in from render_template() #}
+{# For a super-quick overview of templates, see the Jinja documentation
+   at https://jinja.palletsprojects.com/en/2.10.x/templates/ #}
+{% block title %}View Course Enrollment{% endblock %}
+
+
+{% block content %}
+
+{% if status != "error" %}
+
+<table>
+    <thead><th width='33%'>Course ID</th><th width='34%'>Course Name</th><th width='33%'>Number Enrolled</th></thead>
+
+    {% for item in dataSet%}
+    <tr><td>{{item[0]}}</td> <td>{{item[1]}}</td><td>{{item[2]}}</td> </tr>
+    {%  endfor %}
+
+</table>
+
+{% else %}
+
+<p style="text-align:center;">There is missing data in some tables so the report cannot be generted.</p>
+
+{% endif %}
+
+{% endblock %}

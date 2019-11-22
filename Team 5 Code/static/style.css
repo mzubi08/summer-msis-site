@@ -1,0 +1,293 @@
+html{
+    font-family: calibri, sans-serif;
+}
+
+body{
+    margin-bottom: none;
+    margin-top: none;
+    background-color:transparent;
+    background-image: url('images/map.png');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;	
+	height:100%;
+    border:none;
+/*	background-color:aqua;*/
+    
+}
+
+header, nav, main, footer {
+    padding: 10px;
+    font-size: large;
+    margin-bottom: 10px;
+    background-color:none;
+    background-image: url("images/back2.png");
+    margin:0px;
+}
+
+nav, .navbar, .navbar-default, .navbar-nav{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+table, td, th {
+    border-bottom: 1px solid black;
+}
+ 
+
+table {
+    border-bottom: none;
+    width: 100%;
+/*    max-width: 1000px;*/
+    font-weight:100px;
+}
+
+td, th {
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+    border: 1px solid black;
+}
+
+td{
+    border:1px solid black;
+    
+}
+        
+
+container{
+    
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+header {
+    min-height: 50px;
+    text-align:center;
+    margin-bottom:0px;
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
+}
+
+h3, h4 {
+    text-align: left;
+    font-weight:bold;
+}
+
+h1, h2{
+    margin-top:0%;
+    font-weight:bold;
+    text-align:center;
+}
+
+h2{
+    margin-top:0%;
+    font-weight:200
+}
+
+main{
+    padding:3%;
+    min-height: 300px;
+    border:none;
+    border-radius: 5px;
+    font-weight:100px;
+}
+
+footer {
+    text-align:center;
+    font-weight:200px;
+    font-size:1.5rem;
+    border-radius: 5px;
+}
+
+button{
+    align-items:left;
+    width:10%;
+}
+td button{
+    width:100%;
+}
+
+button:hover{
+    background-color: midnightblue;
+    color:azure;
+    transition: 0.4s;    
+}
+
+button:active{
+background-color: lightblue;
+color:black;
+}
+
+form .submit:hover{
+    color:white;
+}
+
+p{
+    font-weight:200px;
+    border:none;
+}
+
+.with_style{
+    list-style: none;
+    background-image:url("images/back.png");
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:5px;
+}
+img{
+    width:25%;
+    padding-bottom: 1%;
+}
+
+input, textarea, select{
+    font-family:arial;
+    font-weight:100;
+}
+
+main.row{
+    margin-bottom:1%;
+    margin-top:1%;
+    border:none;
+}
+
+
+.firstCol{
+    width:10%;
+    text-align:right;
+}
+
+.secondCol{
+    text-align: left;
+    
+}
+
+form{
+    
+}
+
+form table td{
+    border:none;
+}
+
+form table tfoot{
+    border:none;
+}
+
+.animate:hover{
+    background-color:midnightblue;
+    color:white;
+    transition:0.4s;
+}
+
+.animate:active{
+    background-color:mediumblue;
+    color:white;
+    transition:0.2s;
+}
+
+nav, .navbar, .navbar-nav, .navbar-default{
+    padding-top:0%;
+    padding-bottom:0%;
+    margin-bottom: 0px;
+    font-weight:100px;
+}
+
+nav li:active{
+    background-color: midnightblue;
+    transition: 0.4s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus , nav li a:hover, .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color:midnightblue;
+    color:azure;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.navbar-default .navbar-nav > li > a:active, nav li a:active, .dropdown-menu > li > a:active{
+    color:cyan;
+    border-radius: 5px;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+
+.navbar-default, .navbar{
+    background-color: transparent;
+    padding:none;
+    margin:none;
+    
+}
+
+.body{
+    border-radius: 0px;
+/*    background-image: url("images/back2.png");*/
+    border:none;
+}
+
+a{
+    font-weight:150px;
+}
+
+td a{
+    font-style:inherit;
+    color:inherit;
+}
+
+td a:hover{
+    color:white;
+    font-style:inherit;
+}
+
+th{
+    background-image:url("images/back.png");
+}
+
+a:hover{
+    color:midnightblue;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.logIN{
+    padding-right:5px;
+}
+
+
+
+.submit{
+    background-image:url("images/back.png");
+    border: 1px solid blue;
+    border-radius: 5px;
+/*    background-color: transparent;*/
+}
+
+.submit:hover{
+    background-color:transparent;
+}
+
+.submit:active{
+    color:white;
+    background-color:midnightblue;
+}

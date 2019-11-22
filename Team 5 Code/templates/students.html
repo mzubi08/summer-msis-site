@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{# Comments in templates go inside these #}
+
+{# For an application this small, only worry about changing the 'content' block #}
+{# Variables are used with double curly braces {{ some_var }} #}
+{# With minor exceptions, variable names must be passed in from render_template() #}
+{# For a super-quick overview of templates, see the Jinja documentation
+   at https://jinja.palletsprojects.com/en/2.10.x/templates/ #}
+{% block title %}Input Students{% endblock %}
+
+{% block content %}
+<p style="text-align:center;">
+    
+    <form action="{{ url_for('add_students')}}" method="post">
+    Start Date:
+    <br>
+    <input name="startDate" type="date" required>
+    <br>
+    <br>
+    Data Entry:
+    <br>
+    <textarea name="studentsList" cols='100%' rows='15%' required></textarea>
+    <br>
+    <br>
+    <input value="Submit" type="submit">
+    </form>
+
+</p>
+{% endblock %}

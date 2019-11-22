@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kelley System</title>
+    
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!--Compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    
+
+</head>
+<body>
+    
+    <div class="container">
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center;"> 
+                <h1>BIP-IMS</h1>
+                <h4 style="text-align:center;font-weight:bold;font-style:italic;">Business Integrated Programming Information Management System</h4>
+            </div>     
+            
+        </header>
+
+        
+        
+            <nav class="row navbar navbar-default">
+                
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                
+                </div>
+                
+                
+                <div id="menu" class="collapse navbar-collapse">
+                
+                        <ul class="nav navbar-nav">
+                            <li><a href="/home">Home</a></li>
+                            <li><a href="/students">Begin Procedure</a></li>
+                            <!--<li><a href="/courses">Add Courses</a></li>-->
+<!--                            <li><a href="/placeStudents">Place Students</a></li>-->
+                            <li><a href="/report">Generate Report</a></li>
+                        </ul>
+                
+			</div>
+            </nav>
+            
+            <main class="row">
+                
+                <h1>{% block title %}Hello!{% endblock %}</h1>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+
+                
+            </main>
+        
+
+        <footer class="row">
+            <br>
+            Technical Support? Contact Yashiel Gregory, Panni Bala, John Prabhakar, Grace Dayton, or Michael Barnhart
+            <br>
+            Credit to <a href="https://getbootstrap.com/">Bootstrap</a> for their boilerplate
+            <br>
+            Credit to <a href="https://www.pexels.com">Pexels </a> for the background image
+            <br>
+            Credit to <a href="https://www.w3schools.com">W3 Scools</a> for their tutorials
+            <br>
+            Credit to <a href="https://www.stackoverflow.com">Stack Overflow</a> for lots of help
+        </footer>
+        
+        </div>
+    </body>
+</html>

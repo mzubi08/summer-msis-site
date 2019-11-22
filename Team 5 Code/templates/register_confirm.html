@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{# Comments in templates go inside these #}
+
+{# For an application this small, only worry about changing the 'content' block #}
+{# Variables are used with double curly braces {{ some_var }} #}
+{# With minor exceptions, variable names must be passed in from render_template() #}
+{# For a super-quick overview of templates, see the Jinja documentation
+   at https://jinja.palletsprojects.com/en/2.10.x/templates/ #}
+{% block title %}Register Students{% endblock %}
+
+{% block content %}
+
+<p style="text-align:center;">The students you uploaded have been registered to the courses in the database.</p>
+
+<form style="text-align:center;" action='{{ url_for('home')}}' href='/courses'>
+<button>Home</button>
+</form>
+
+{% endblock %}

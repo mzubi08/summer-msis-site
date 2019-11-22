@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{# Comments in templates go inside these #}
+
+{# For an application this small, only worry about changing the 'content' block #}
+{# Variables are used with double curly braces {{ some_var }} #}
+{# With minor exceptions, variable names must be passed in from render_template() #}
+{# For a super-quick overview of templates, see the Jinja documentation
+   at https://jinja.palletsprojects.com/en/2.10.x/templates/ #}
+{% block title %}Input Students{% endblock %}
+
+{% block content %}
+
+{% if result == "confirm" %}
+
+<p style="text-align:center;">The data provided has been uploaded to the Students Table.
+<br>
+Click 'Proceed' to continue to add Courses.
+</p>
+
+<form style="text-align:center;" action='{{ url_for('view_courses')}}' href='/courses'>
+<button>Proceed</button>
+</form>
+{% else %}
+
+<p style="text-align:center;">There was an issue uploading the data provided. Please check the data and try again.</p>
+
+{% endif %}
+
+{% endblock %}

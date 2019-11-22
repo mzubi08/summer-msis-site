@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Instructions for Use</h2>
+
+<p>
+   The system is designed to operate in a 3 step process:
+    <br>
+    <ol>
+        <li>Add Students: Upload the student list to be reviewed and recorded in the database</li>
+        <li>Add Courses: Upload the course list to the database</li>
+        <li>Place students: Enroll students in course sections</li>
+    </ol>
+
+    Where data input is expected, it is presented in the form of a large text-area. Please paste your CSV records in a format matching this <a href='static/example.csv'>Example CSV File</a>.
+</p>
+
+<form style="text-align:center;"  action="/students">
+<button type="submit">Start</button>
+</form>
+<br>
+<p>
+    
+If you would like to generate a report, click "request report" below:
+
+<form style="text-align:center;" action="/report">
+<button type="submit">Request Report</button>
+</form>
+
+</p>
+
+
+<hr>
+<h2>Corporate Partners</h2>
+<p style="text-align:center;" >
+    <img src="static/images/A_A.png" alt="Arthur Andersen Logo" style="width:80px;height:80px;">
+    
+    <img src="static/images/Blu_Boy.png" alt="Blu Boy logo" style="width:80px;height:80px;">
+    
+    <img src="static/images/C_S.png" alt="Cardinal Spirits Logo" style="width:80px;height:80px;">
+    
+    <img src="static/images/D_G_S.png" alt="Darn Good Soup Logo">
+    
+    <img src="static/images/Enron.png" alt="Enron Logo" style="width:80px;height:80px;">
+    
+    <img src="static/images/Farm.png" alt="Farm Logo" style="width:80px;height:80px;">
+</p>
+
+{% endblock %}
+
